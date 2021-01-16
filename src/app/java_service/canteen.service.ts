@@ -15,7 +15,7 @@ export class CanteenService
 
   }
 
-  handleError(error) {
+  /*handleError(error) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
       // client-side error
@@ -26,7 +26,7 @@ export class CanteenService
     }
     window.alert(errorMessage);
     return throwError(errorMessage);
-  }
+  }*/
 
   getByUserName(Uname:String) : Observable<any> {
     return this.http.post(this.path +"Uname",Uname);
