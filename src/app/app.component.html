@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Search Form Design</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a routerLink="/search">Search</a>
+      <a href="#">
+        <div class="dropdown">
+          <i class="fa fa-fw fa-envelope"></i>Contact
+          <button class="dropbtn">
+          </button>
+          <div class="dropdown-content">
+            <p>Contact Details</p>
+          </div>
+        </div>
+      </a>
+      <a routerLink="/login">Login</a>
+      <!-- <span href="#" style="float:right"> -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-fw fa-user"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <p>This is login circle</p>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      <!-- </span> -->
+    </div>
+    <div class="header">
+      <div class="middle-header">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </body>
+</html>
